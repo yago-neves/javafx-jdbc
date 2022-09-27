@@ -43,7 +43,7 @@ public class MainViewController implements Initializable {
 
 	@FXML
 	public void onMenuItemDepartmentAction() {
-		System.out.println("onMenuItemDepartmentAction");
+		loadView("/gui/DepartmentList.fxml");
 	}
 
 	@FXML
@@ -53,7 +53,6 @@ public class MainViewController implements Initializable {
 	
 	@FXML
 	public void onLinkItemPageAction(ActionEvent event) throws URISyntaxException, IOException{
-		
 		Desktop.getDesktop().browse(new URI("https://www.instagram.com/yago_neves/"));
 	}
 
