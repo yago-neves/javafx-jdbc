@@ -127,10 +127,10 @@ public class DepartmentFormController implements Initializable {
 		txtId.setText(String.valueOf(entity.getId()));
 		txtName.setText(entity.getName());
 	}
-	
+
 	private void setErrorMessages(Map<String, String> errors) {
 		Set<String> fields = errors.keySet();
-		
+
 		if (fields.contains("name")) {
 			labelErrorName.setText(errors.get("name"));
 		}

@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox minHeight="500.0" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DepartmentListController">
+<VBox fillWidth="false" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DepartmentListController">
    <children>
       <Label text="Departments">
          <padding>
@@ -36,10 +36,11 @@
             </ButtonBar>
         </items>
       </ToolBar>
-      <TableView fx:id="tableViewDepartment" prefHeight="400.0" prefWidth="600.0">
+      <TableView fx:id="tableViewDepartment" prefHeight="428.0" prefWidth="600.0" stylesheets="@DepartmentList.css">
         <columns>
-          <TableColumn fx:id="tableColumnId" prefWidth="75.0" text="Id" />
-          <TableColumn fx:id="tableColumnName" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="tableColumnId" prefWidth="54.0" text="Id" />
+          <TableColumn fx:id="tableColumnName" minWidth="5.0" prefWidth="96.0" styleClass=".column-header" text="Name" />
+            <TableColumn fx:id="tableColumnEdit" prefWidth="75.0" />
         </columns>
       </TableView>
    </children>
