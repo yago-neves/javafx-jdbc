@@ -36,8 +36,14 @@
     -fx-text-fill: lightgray;
 }
 .button {
-    -fx-background-color: #60b2ff;
     -fx-text-fill: white;
     -fx-font-weight: bold;
     -fx-font-family: Trebuchet;
+}
+#tableColumnEdit .button{
+    -fx-background-color: #60b2ff;
+}
+
+#tableColumnRemove .button {
+    -fx-background-color: #9c3117;
 }

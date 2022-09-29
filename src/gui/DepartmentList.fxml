@@ -40,7 +40,8 @@
         <columns>
           <TableColumn fx:id="tableColumnId" prefWidth="54.0" text="Id" />
           <TableColumn fx:id="tableColumnName" minWidth="5.0" prefWidth="96.0" styleClass=".column-header" text="Name" />
-            <TableColumn fx:id="tableColumnEdit" prefWidth="75.0" />
+            <TableColumn fx:id="tableColumnEdit" maxWidth="200.0" prefWidth="50.0" />
+            <TableColumn fx:id="tableColumnRemove" maxWidth="200.0" prefWidth="50.0" />
         </columns>
       </TableView>
    </children>
