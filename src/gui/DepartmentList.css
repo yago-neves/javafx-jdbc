@@ -10,6 +10,29 @@
     -fx-effect: dropshadow(two-pass-box, rgb(75, 90, 90), 15, 0.0, 0.1, 1);
 }
 
+.menu,
+.menu-bar,
+.menu-item {
+    -fx-background-color: rgb(109, 106, 106);
+}
+
+.menu .menu-item:hover{
+    -fx-background-color: rgb(212, 212, 212);
+    -fx-font-weight: bold;
+}
+
+#Seller:focused .label,
+ #Department:focused .label,
+  #About:focused .label{
+    -fx-text-fill: rgb(63, 63, 63);
+}
+
+.menu .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-family: Georgia;
+}
+
 .table-view .column-header,
 .table-view .filler {
     -fx-siza: 40;
@@ -35,15 +58,23 @@
     -fx-border-color: #656b6b;
     -fx-text-fill: lightgray;
 }
+
 .button {
     -fx-text-fill: white;
     -fx-font-weight: bold;
     -fx-font-family: Trebuchet;
 }
-#tableColumnEdit .button{
+
+#tableColumnEdit .button {
     -fx-background-color: #60b2ff;
 }
 
 #tableColumnRemove .button {
     -fx-background-color: #9c3117;
+}
+
+#tableColumnEdit .button:hover,
+#tableColumnRemove .button:hover {
+    -fx-background-color: #a5a5a5;
+    -fx-text-fill: rgb(0, 0, 0);
 }
