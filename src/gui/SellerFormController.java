@@ -154,6 +154,8 @@ public class SellerFormController implements Initializable {
 			exception.addError("baseSalary", "Field can't be empty");
 		}
 		obj.setBaseSalary(Utils.tryParseToDouble(txtBaseSalary.getText()));
+		
+		obj.setDepartment(comboBoxDepartment.getValue());
 
 		if (exception.getErrors().size() > 0) {
 			throw exception;
